@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 // Verifies the full checkout flow: fill the form, submit, and see the success message.
-test("Verify the ability to checkout - the success message appears", async ({
+test("ability to checkout - the success message should appear", async ({
   page,
 }) => {
   await page.goto("https://coffee-cart.app/");

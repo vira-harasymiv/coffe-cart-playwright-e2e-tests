@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 // Verifies that an empty cart shows the "No coffee, go add some." message.
-test("Check that an empty cart shows the 'No coffee, go add some.' message", async ({
+test("empty cart - 'No coffee, go add some.' message should be shown", async ({
   page,
 }) => {
   await page.goto("https://coffee-cart.app/");

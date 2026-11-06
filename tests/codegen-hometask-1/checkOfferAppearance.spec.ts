@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 // Verifies that the Mocha extra-cup offer appears once 3 Espressos are in the cart.
-test("Check if the offer appears after adding 3 cups of espresso", async ({
+test("adding 3 cups of espresso - the offer should appear", async ({
   page,
 }) => {
   await page.goto("https://coffee-cart.app/");

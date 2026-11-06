@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 // Verifies that a single Espresso added to the cart is priced correctly
 // in both the checkout button total and the cart page.
-test("Check adding one espresso to the cart - price should be shown correctly", async ({
+test("adding one espresso to the cart - price should be shown correctly", async ({
   page,
 }) => {
   await page.goto("https://coffee-cart.app/");

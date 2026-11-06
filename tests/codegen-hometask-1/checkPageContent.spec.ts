@@ -1,9 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 // Verifies the menu lists all 9 coffee items with their name, price format, and description.
-test("Check page content: 9 different items should be shown", async ({
-  page,
-}) => {
+test("page content - 9 different items should be shown", async ({ page }) => {
   await page.goto("https://coffee-cart.app/");
   // Aria snapshot of the menu list: each item's heading (name + price) and ingredients text.
   // Prices are matched by pattern (\$\d+\.\d+) so the test does not break on price changes.
