@@ -30,7 +30,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on",
-    baseURL: "http://104.168.59.50/",
+    baseURL: process.env.BASE_URL,
   },
 
   /* Configure projects for major browsers */
